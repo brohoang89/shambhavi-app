@@ -4,21 +4,21 @@
    1. DỮ LIỆU CÁC BƯỚC
    ========================================================= */
 const WARMUP_STEPS = [
-  { id: 'vay-canh-buom', name: 'Vẫy cánh bướm', seconds: 135, audio: 'next-vay-canh-buom.mp3' },
-  { id: 'ru-em-phai', name: 'Ru em – chân phải', seconds: 135, audio: 'next-ru-em-phai.mp3' },
-  { id: 'ru-em-trai', name: 'Ru em – chân trái', seconds: 135, audio: 'next-ru-em-trai.mp3' },
-  { id: 'meo-ruon', name: 'Mèo rướn', seconds: 270, audio: 'next-meo-ruon.mp3' },
+  { id: 'vay-canh-buom', name: 'Vẫy cánh bướm', seconds: 135, audio: 'next-vay-canh-buom.m4a' },
+  { id: 'ru-em-phai', name: 'Ru em – chân phải', seconds: 135, audio: 'next-ru-em-phai.m4a' },
+  { id: 'ru-em-trai', name: 'Ru em – chân trái', seconds: 135, audio: 'next-ru-em-trai.m4a' },
+  { id: 'meo-ruon', name: 'Mèo rướn', seconds: 270, audio: 'next-meo-ruon.m4a' },
 ];
 
 const MAIN_STEPS = [
-  { id: 'tho-luan-phien', name: 'Thở luân phiên', seconds: 420, audio: 'next-tho-luan-phien.mp3' },
-  { id: 'phat-am-aum', name: 'Phát âm AUM', isAUM: true, audio: 'next-phat-am-aum.mp3' },
-  { id: 'tho-rung-dong', name: 'Thở rung động', seconds: 240, audio: 'next-tho-rung-dong.mp3' },
-  { id: 'khoa-bandhas', name: 'Khóa Bandhas', seconds: 120, audio: 'next-khoa-bandhas.mp3' },
-  { id: 'tha-long', name: 'Thả lỏng, quan sát hơi thở', seconds: 360, audio: 'next-tha-long.mp3' },
+  { id: 'tho-luan-phien', name: 'Thở luân phiên', seconds: 420, audio: 'next-tho-luan-phien.m4a' },
+  { id: 'phat-am-aum', name: 'Phát âm AUM', isAUM: true, audio: 'next-phat-am-aum.m4a' },
+  { id: 'tho-rung-dong', name: 'Thở rung động', seconds: 240, audio: 'next-tho-rung-dong.m4a' },
+  { id: 'khoa-bandhas', name: 'Khóa Bandhas', seconds: 120, audio: 'next-khoa-bandhas.m4a' },
+  { id: 'tha-long', name: 'Thả lỏng, quan sát hơi thở', seconds: 360, audio: 'next-tha-long.m4a' },
 ];
 
-const END_AUDIO = 'end-hoan-thanh.mp3';
+const END_AUDIO = 'end-hoan-thanh.m4a';
 
 const LS_SESSIONS = 'shambhavi_sessions_v1';
 const LS_LAST_X = 'shambhavi_last_x_v1';
