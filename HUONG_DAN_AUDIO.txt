@@ -1,0 +1,47 @@
+HƯỚNG DẪN GHI ÂM VÀ ĐẶT FILE AUDIO
+===================================
+
+Đặt các file .mp3 (hoặc .m4a / .wav đều được, chỉ cần đổi đúng phần đuôi
+tương ứng trong app.js nếu bạn dùng đuôi khác mp3) vào ĐÚNG thư mục này
+(audio/) với ĐÚNG tên như bên dưới. App sẽ tự nhận, không cần sửa code.
+
+Nếu một file chưa có, app vẫn chạy bình thường — chỉ phát tiếng chuông,
+bỏ qua phần giọng nói, không báo lỗi.
+
+Danh sách 10 file cần ghi âm:
+
+1. next-vay-canh-buom.mp3
+   Nội dung gợi ý: "Tiếp theo là động tác vẫy cánh bướm"
+
+2. next-ru-em-phai.mp3
+   Nội dung gợi ý: "Tiếp theo là động tác ru em, chân phải"
+
+3. next-ru-em-trai.mp3
+   Nội dung gợi ý: "Tiếp theo là động tác ru em, chân trái"
+
+4. next-meo-ruon.mp3
+   Nội dung gợi ý: "Tiếp theo là động tác mèo rướn"
+
+5. next-tho-luan-phien.mp3
+   Nội dung gợi ý: "Tiếp theo là thở luân phiên"
+
+6. next-phat-am-aum.mp3
+   Nội dung gợi ý: "Tiếp theo là phát âm AUM"
+
+7. next-tho-rung-dong.mp3
+   Nội dung gợi ý: "Tiếp theo là thở rung động"
+
+8. next-khoa-bandhas.mp3
+   Nội dung gợi ý: "Tiếp theo là khóa Bandhas"
+
+9. next-tha-long.mp3
+   Nội dung gợi ý: "Tiếp theo là thả lỏng, quan sát hơi thở tự nhiên"
+
+10. end-hoan-thanh.mp3
+    Nội dung gợi ý: "Bạn đã hoàn thành bài tập"
+
+CÁCH ĐƯA FILE LÊN GITHUB:
+- Vào repository trên GitHub -> mở thư mục audio -> "Add file" -> "Upload files"
+- Kéo thả các file .mp3 đã đặt đúng tên ở trên vào -> Commit changes.
+- Mở lại app một lần khi có mạng để app tải và lưu cache các file mới này,
+  sau đó dùng offline bình thường.

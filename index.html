@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+<meta name="theme-color" content="#0b0d12" />
+<meta name="description" content="Đếm giờ hướng dẫn tập Shambhavi Mahamudra Kriya" />
+<title>Shambhavi Mahamudra Kriya</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icons/icon-192.png" />
+<link rel="apple-touch-icon" href="icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Shambhavi" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ============ MÀN HÌNH TRANG CHỦ ============ -->
+<main id="screen-home" class="screen screen-active">
+  <div class="wrap wrap-home">
+    <div class="mark" aria-hidden="true"><span class="mark-dot"></span></div>
+    <p class="eyebrow">Thiền định</p>
+    <h1 class="title-serif">Shambhavi<br/>Mahamudra Kriya</h1>
+
+    <button id="btn-open-setup" class="btn btn-primary btn-large">Bắt đầu tập</button>
+
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number" id="stat-total">0</span>
+        <span class="stat-label">Tổng số buổi</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" id="stat-week">0</span>
+        <span class="stat-label">7 ngày qua</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" id="stat-month">0</span>
+        <span class="stat-label">Tháng này</span>
+      </div>
+    </div>
+
+    <button id="btn-open-log" class="btn btn-ghost">Xem nhật ký chi tiết</button>
+
+    <p class="offline-note" id="offline-note"></p>
+  </div>
+</main>
+
+<!-- ============ MÀN HÌNH THIẾT LẬP TRƯỚC KHI TẬP ============ -->
+<section id="screen-setup" class="screen">
+  <div class="wrap">
+    <button class="btn-back" id="btn-setup-back" aria-label="Quay lại">←</button>
+    <p class="eyebrow">Thiết lập buổi tập</p>
+    <h2 class="title-serif title-mid">Bạn muốn tập<br/>theo cách nào?</h2>
+
+    <div class="choice-group" id="mode-choice">
+      <button class="choice-card" data-mode="full">
+        <span class="choice-title">Tập đầy đủ</span>
+        <span class="choice-desc">Khởi động + Bài thiền · khoảng 26 phút + AUM</span>
+      </button>
+      <button class="choice-card" data-mode="meditation">
+        <span class="choice-title">Chỉ bài thiền</span>
+        <span class="choice-desc">Bỏ qua khởi động, vào thẳng Thở luân phiên</span>
+      </button>
+    </div>
+
+    <div class="field">
+      <label for="input-x">Thời gian mỗi âm A · U · M (giây)</label>
+      <input type="number" id="input-x" min="1" max="30" step="1" value="5" inputmode="numeric" />
+      <p class="field-hint">Hít vào giữ cố định 4 giây. Lặp lại 21 chu kỳ.</p>
+    </div>
+
+    <button id="btn-confirm-start" class="btn btn-primary btn-large" disabled>Xác nhận bắt đầu</button>
+  </div>
+</section>
+
+<!-- ============ MÀN HÌNH ĐANG TẬP ============ -->
+<section id="screen-session" class="screen">
+  <div class="wrap wrap-session">
+    <p class="session-progress" id="session-progress"></p>
+    <p class="session-phase" id="session-phase"></p>
+    <h2 class="title-serif session-step-name" id="session-step-name">—</h2>
+
+    <div class="timer-ring" id="timer-ring">
+      <svg viewBox="0 0 200 200" class="timer-svg" aria-hidden="true">
+        <circle cx="100" cy="100" r="92" class="timer-track" />
+        <circle cx="100" cy="100" r="92" class="timer-progress" id="timer-progress-circle" />
+      </svg>
+      <div class="timer-number" id="timer-number">00:00</div>
+    </div>
+
+    <p class="session-hint" id="session-hint">&nbsp;</p>
+  </div>
+</section>
+
+<!-- ============ MÀN HÌNH HOÀN THÀNH ============ -->
+<section id="screen-complete" class="screen">
+  <div class="wrap wrap-home">
+    <div class="mark mark-complete" aria-hidden="true"><span class="mark-dot"></span></div>
+    <p class="eyebrow">Hoàn thành</p>
+    <h2 class="title-serif">Buổi tập<br/>đã kết thúc</h2>
+    <p class="complete-summary" id="complete-summary"></p>
+    <button id="btn-complete-home" class="btn btn-primary btn-large">Về trang chủ</button>
+  </div>
+</section>
+
+<!-- ============ MÀN HÌNH NHẬT KÝ ============ -->
+<section id="screen-log" class="screen">
+  <div class="wrap wrap-log">
+    <button class="btn-back" id="btn-log-back" aria-label="Quay lại">←</button>
+    <p class="eyebrow">Lịch sử</p>
+    <h2 class="title-serif title-mid">Nhật ký tập luyện</h2>
+
+    <div id="log-list" class="log-list"></div>
+    <p class="log-empty" id="log-empty">Chưa có buổi tập nào được ghi lại.</p>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
